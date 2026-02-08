@@ -20,7 +20,7 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[70vh] sm:min-h-[85vh] flex items-center justify-center overflow-hidden">
       {/* Parallax Background Image */}
       <div ref={parallaxRef} className="absolute inset-0 -top-[20%] -bottom-[20%]">
         <Image
@@ -46,9 +46,9 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-12 sm:py-20">
         {/* Main heading with staggered animation */}
-        <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-8 animate-fade-in-up drop-shadow-lg">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-6 sm:mb-8 animate-fade-in-up drop-shadow-lg">
           Czy wiesz, że najcenniejszą rzecz na świecie możesz otrzymać{' '}
           <span className="text-primary-light relative inline-block">
             za darmo
@@ -58,8 +58,8 @@ export function HeroSection() {
         </h1>
 
         {/* Glassmorphism card */}
-        <div className="glass-dark rounded-2xl p-6 md:p-8 max-w-2xl mx-auto mb-8 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-          <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-4">
+        <div className="glass-dark rounded-2xl p-4 sm:p-6 md:p-8 max-w-2xl mx-auto mb-6 sm:mb-8 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+          <p className="text-base sm:text-lg md:text-xl text-white/90 leading-relaxed mb-4">
             Za darmo, bo Ktoś już za nią zapłacił zamiast Ciebie. I chce Ci ją podarować.
             Tą rzeczą jest <strong className="text-white font-semibold">zbawienie</strong>.
           </p>
@@ -90,7 +90,7 @@ export function HeroSection() {
         <div className="animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
           <Link
             href="#scroll1"
-            className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/30 no-underline"
+            className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/30 no-underline"
           >
             Dowiedz się więcej
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

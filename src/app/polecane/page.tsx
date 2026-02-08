@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 export default function PolecamePage() {
   return (
     <PageWithSidebar>
-      <article className="prose-content">
-        <h1 className="text-3xl font-bold text-gray-900 mb-6">
+      <article className="max-w-none">
+        <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
           Książki, filmy, strony internetowe
         </h1>
 

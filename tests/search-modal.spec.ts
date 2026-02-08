@@ -12,8 +12,8 @@ test.describe('Search Modal', () => {
     
     await searchButton.click();
     
-    // Verify modal is visible
-    const modal = page.locator('div.fixed.inset-0.z-50');
+    // Verify modal is visible (search modal has overflow-y-auto)
+    const modal = page.locator('div.fixed.inset-0.z-50.overflow-y-auto');
     await expect(modal).toBeVisible();
     
     // Verify search input is visible and focused
@@ -66,12 +66,12 @@ test.describe('Search Modal', () => {
     // Open modal
     await page.click('button[aria-label="Szukaj"]');
     
-    // Verify modal is open
-    const modal = page.locator('div.fixed.inset-0.z-50');
+    // Verify modal is open (search modal has overflow-y-auto)
+    const modal = page.locator('div.fixed.inset-0.z-50.overflow-y-auto');
     await expect(modal).toBeVisible();
     
     // Click the backdrop (the outer div, not the modal content)
-    await page.locator('div.fixed.inset-0.z-50').click({ position: { x: 10, y: 10 } });
+    await modal.click({ position: { x: 10, y: 10 } });
     
     // Verify modal is closed
     await expect(modal).not.toBeVisible();
@@ -81,8 +81,8 @@ test.describe('Search Modal', () => {
     // Open modal
     await page.click('button[aria-label="Szukaj"]');
     
-    // Verify modal is open
-    const modal = page.locator('div.fixed.inset-0.z-50');
+    // Verify modal is open (search modal has overflow-y-auto)
+    const modal = page.locator('div.fixed.inset-0.z-50.overflow-y-auto');
     await expect(modal).toBeVisible();
     
     // Click inside the modal content
@@ -97,8 +97,8 @@ test.describe('Search Modal', () => {
     // Open modal
     await page.click('button[aria-label="Szukaj"]');
     
-    // Verify modal is open
-    const modal = page.locator('div.fixed.inset-0.z-50');
+    // Verify modal is open (search modal has overflow-y-auto)
+    const modal = page.locator('div.fixed.inset-0.z-50.overflow-y-auto');
     await expect(modal).toBeVisible();
     
     // Click the close button
@@ -112,8 +112,8 @@ test.describe('Search Modal', () => {
     // Open modal
     await page.click('button[aria-label="Szukaj"]');
     
-    // Verify modal is open
-    const modal = page.locator('div.fixed.inset-0.z-50');
+    // Verify modal is open (search modal has overflow-y-auto)
+    const modal = page.locator('div.fixed.inset-0.z-50.overflow-y-auto');
     await expect(modal).toBeVisible();
     
     // Press Escape
@@ -138,8 +138,8 @@ test.describe('Search Modal', () => {
     // Click first result
     await firstResult.click();
     
-    // Verify modal is closed after navigation
-    const modal = page.locator('div.fixed.inset-0.z-50');
+    // Verify modal is closed after navigation (search modal has overflow-y-auto)
+    const modal = page.locator('div.fixed.inset-0.z-50.overflow-y-auto');
     await expect(modal).not.toBeVisible();
   });
 

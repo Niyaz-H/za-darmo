@@ -7,8 +7,8 @@ test.describe('Navigation Tests', () => {
     // Check that the page loaded - title contains "za-darmo" (with hyphen)
     await expect(page).toHaveTitle(/za-darmo/i);
     
-    // Check for main navigation elements
-    await expect(page.locator('nav')).toBeVisible();
+    // Check for main navigation elements (desktop nav hidden on mobile, use first visible)
+    await expect(page.locator('nav').first()).toBeVisible();
     await expect(page.getByRole('banner')).toBeVisible();
   });
 

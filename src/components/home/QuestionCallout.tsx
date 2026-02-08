@@ -4,7 +4,7 @@ import { Button, AnimateOnScroll } from '@/components/ui';
 export function QuestionCallout() {
   return (
     <AnimateOnScroll animation="scale-in">
-      <div className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-primary/5 to-blue-50 rounded-2xl p-8 md:p-10 text-center border border-primary/10">
+      <div className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-primary/5 to-blue-50 rounded-2xl p-5 sm:p-8 md:p-10 text-center border border-primary/10">
         {/* Decorative elements */}
         <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2" aria-hidden="true" />
         <div className="absolute bottom-0 left-0 w-24 h-24 bg-primary/5 rounded-full translate-y-1/2 -translate-x-1/2" aria-hidden="true" />
