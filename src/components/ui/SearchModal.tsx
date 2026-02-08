@@ -20,10 +20,13 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
       )
     : [];
 
-  // Focus input when modal opens
+  // Reset search query and focus input when modal opens/closes
   useEffect(() => {
     if (isOpen && inputRef.current) {
       inputRef.current.focus();
+    }
+    if (!isOpen) {
+      setSearchQuery('');
     }
   }, [isOpen]);
 
