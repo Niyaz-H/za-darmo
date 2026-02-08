@@ -53,8 +53,8 @@ interface SidebarCardProps {
 function SidebarCard({ title, description, href, imageSrc, imageAlt }: SidebarCardProps) {
   const isDisabled = href === '#';
   
-  return (
-    <div className="bg-white rounded-lg shadow-sm overflow-hidden">
+  const cardContent = (
+    <>
       {imageSrc && (
         <div className="relative h-32 bg-gray-200">
           <Image
@@ -67,18 +67,26 @@ function SidebarCard({ title, description, href, imageSrc, imageAlt }: SidebarCa
         </div>
       )}
       <div className="p-4">
-        {isDisabled ? (
-          <h4 className="font-semibold text-gray-700 mb-2">{title}</h4>
-        ) : (
-          <Link href={href} className="group">
-            <h4 className="font-semibold text-gray-900 group-hover:text-primary transition-colors mb-2">
-              {title}
-            </h4>
-          </Link>
-        )}
+        <h4 className="font-semibold text-gray-900 group-hover:text-primary transition-colors mb-2">
+          {title}
+        </h4>
         <p className="text-sm text-gray-600">{description}</p>
       </div>
-    </div>
+    </>
+  );
+  
+  if (isDisabled) {
+    return (
+      <div className="bg-white rounded-lg shadow-sm overflow-hidden">
+        {cardContent}
+      </div>
+    );
+  }
+  
+  return (
+    <Link href={href} className="block bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow group">
+      {cardContent}
+    </Link>
   );
 }
 

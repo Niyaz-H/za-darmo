@@ -1,24 +1,11 @@
-import Image from 'next/image';
 import { HeroSection, QuestionCallout, GospelMessage } from '@/components/home';
 import { PageWithSidebar } from '@/components/layout';
 
 export default function HomePage() {
   return (
     <>
-      {/* Hero Section */}
+      {/* Hero Section with integrated parallax image */}
       <HeroSection />
-
-      {/* Hero Image */}
-      <div className="relative w-full h-64 md:h-80 lg:h-96">
-        <Image
-          src="/images/hero-sky.jpg"
-          alt="Niebo - Za darmo"
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
-        />
-      </div>
 
       {/* Gospel Message with Sidebar */}
       <PageWithSidebar>

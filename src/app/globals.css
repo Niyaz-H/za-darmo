@@ -5,15 +5,23 @@
   /* Colors */
   --color-primary: #3498db;
   --color-primary-dark: #2980b9;
+  --color-primary-light: #5dade2;
   --color-text: #333333;
   --color-text-light: #666666;
   --color-background: #ffffff;
   --color-background-gray: #f5f5f5;
-  --color-footer: #2c3e50;
+  --color-footer: #1a2332;
   --color-border: #e5e5e5;
+  --color-accent: #e74c3c;
+  --color-gold: #f39c12;
   
   /* Font families */
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Animation durations */
+  --animate-duration-fast: 0.3s;
+  --animate-duration-normal: 0.6s;
+  --animate-duration-slow: 1s;
 }
 
 /* Base styles */
@@ -21,6 +29,8 @@ body {
   font-family: var(--font-sans);
   color: var(--color-text);
   background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Bible verse styling */
@@ -33,13 +43,14 @@ body {
   font-style: normal;
 }
 
-/* Links */
-a {
+/* Links - scoped to avoid overriding component styles */
+a:not([class]) {
   color: var(--color-primary);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-a:hover {
+a:not([class]):hover {
   color: var(--color-primary-dark);
   text-decoration: underline;
 }
@@ -61,4 +72,248 @@ html {
 @utility prose-content {
   max-width: 65ch;
   line-height: 1.75;
+}
+
+/* ===== ANIMATION KEYFRAMES ===== */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes bounce-gentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ===== ANIMATION UTILITY CLASSES ===== */
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s ease-out forwards;
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown 0.5s ease-out forwards;
+}
+
+.animate-fade-in-left {
+  animation: fadeInLeft 0.7s ease-out forwards;
+}
+
+.animate-fade-in-right {
+  animation: fadeInRight 0.7s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.5s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-bounce-gentle {
+  animation: bounce-gentle 2s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.4) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 6s ease infinite;
+}
+
+/* Staggered animation delays */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-600 { animation-delay: 0.6s; }
+.delay-700 { animation-delay: 0.7s; }
+.delay-800 { animation-delay: 0.8s; }
+
+/* Initially hidden for scroll-triggered animations */
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+}
+
+/* ===== PARALLAX ===== */
+
+.parallax-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.parallax-bg {
+  position: absolute;
+  inset: -20% 0;
+  will-change: transform;
+}
+
+/* ===== GLASSMORPHISM ===== */
+
+.glass {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-white {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ===== HOVER EFFECTS ===== */
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.hover-glow {
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(52, 152, 219, 0.3);
+}
+
+/* ===== GRADIENT TEXT ===== */
+
+.text-gradient {
+  background: linear-gradient(135deg, #3498db, #2980b9, #5dade2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===== SCROLL INDICATOR ===== */
+
+@keyframes scroll-bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+  40% { transform: translateY(8px) translateX(-50%); }
+  60% { transform: translateY(4px) translateX(-50%); }
+}
+
+.scroll-indicator {
+  animation: scroll-bounce 2.5s ease-in-out infinite;
+}
+
+/* ===== SELECTION ===== */
+
+::selection {
+  background-color: rgba(52, 152, 219, 0.2);
+  color: inherit;
 }

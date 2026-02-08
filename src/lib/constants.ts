@@ -46,8 +46,8 @@ export const sidebarCards: SidebarCard[] = [
   {
     id: 'resources',
     title: 'Książki, filmy, strony internetowe',
-    description: 'Już wkrótce znajdziesz tutaj ciekawe materiały związane z Pismem Świętym, oraz chrześcijaństwem. Zapraszamy niebawem.',
-    href: '#',
+    description: 'Polecane materiały chrześcijańskie: książki, filmy i strony internetowe pomocne w studiowaniu Pisma Świętego.',
+    href: '/polecane',
     imageSrc: '/images/sidebar-library.jpg',
     imageAlt: 'Biblioteka',
   },
