@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { PageWithSidebar } from '@/components/layout';
-import { ContactForm } from '@/components/contact/ContactForm';
+import { ContactForm } from '@/components/contact';
 import { contactEmail, questionsEmail, socialLinks } from '@/lib/constants';
 
 export const metadata: Metadata = {

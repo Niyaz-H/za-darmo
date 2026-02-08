@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { PageWithSidebar } from '@/components/layout';
 
 export const metadata: Metadata = {
