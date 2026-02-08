@@ -11,7 +11,7 @@ export function QuestionCallout() {
         </Link>
       </p>
       <Button href="/spis-pytan" variant="primary">
-        Spis pytań
+        Zobacz wszystkie pytania
       </Button>
     </div>
   );

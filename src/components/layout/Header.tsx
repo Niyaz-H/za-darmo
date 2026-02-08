@@ -1,11 +1,12 @@
 'use client';
 
 import { useState } from 'react';
-import { Logo, Navigation, MobileMenu, MobileMenuButton, SocialIcons } from '@/components/ui';
+import { Logo, Navigation, MobileMenu, MobileMenuButton, SocialIcons, SearchModal } from '@/components/ui';
 import { mainNavigation, socialLinks } from '@/lib/constants';
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-40 bg-white shadow-sm">
@@ -21,6 +22,7 @@ export function Header() {
           <div className="hidden lg:flex items-center gap-4">
             <SocialIcons links={socialLinks} size="sm" />
             <button
+              onClick={() => setIsSearchOpen(true)}
               className="p-2 text-gray-500 hover:text-primary transition-colors"
               aria-label="Szukaj"
             >
@@ -40,6 +42,12 @@ export function Header() {
         items={mainNavigation}
         isOpen={isMobileMenuOpen}
         onClose={() => setIsMobileMenuOpen(false)}
+      />
+
+      {/* Search Modal */}
+      <SearchModal
+        isOpen={isSearchOpen}
+        onClose={() => setIsSearchOpen(false)}
       />
     </header>
   );

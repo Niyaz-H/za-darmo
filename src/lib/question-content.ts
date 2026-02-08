@@ -15,6 +15,149 @@ interface QuestionContent {
 }
 
 export const questionContent: Record<number, QuestionContent> = {
+  // Question 2: Czy zbawienie naprawdę jest całkowicie za darmo?
+  2: {
+    slug: 'czy-zbawienie-naprawde-jest-calkowicie-za-darmo',
+    title: 'Czy zbawienie naprawdę jest całkowicie za darmo?',
+    shortAnswer: 'Tak, zbawienie jest całkowicie darmowym darem od Boga. Nie wymaga żadnych uczynków, wysiłku ani zasług z naszej strony – tylko wiary w Jezusa Chrystusa.',
+    sections: [
+      {
+        title: 'Zbawienie jako dar łaski',
+        content: `
+          <p>Biblia konsekwentnie przedstawia zbawienie jako <strong>absolutnie darmowy dar</strong>
+          od Boga. Apostoł Paweł napisał w Liście do Efezjan 2:8-9: <em>"Albowiem łaską zbawieni
+          jesteście przez wiarę, i to nie z was: Boży to dar; nie z uczynków, aby się kto nie chlubił."</em></p>
+          
+          <p>Słowo "dar" (gr. <em>dōrea</em>) w Nowym Testamencie oznacza coś, co jest
+          <strong>całkowicie darmowe i niezasłużone</strong>. Nie można go kupić, wypracować
+          ani na niego zasłużyć. Bóg daje zbawienie z czystej łaski, nie dlatego, że jesteśmy
+          tego godni, ale dlatego, że On jest miłosierny.</p>
+          
+          <p>Życie wieczne jest <strong>obecnym posiadaniem</strong> otrzymywanym w momencie
+          wiary, bez żadnych warunków ani przed, ani po tej transakcji. To nie jest nagroda
+          za nasze zasługi, ale dar Bożej miłości.</p>
+        `,
+      },
+      {
+        title: 'Wiara nie jest uczynkiem',
+        content: `
+          <p>Niektórzy mogą zapytać: "Czy wiara nie jest formą uczynku?" Biblia jasno
+          odpowiada, że <strong>wiara jest przeciwieństwem uczynków</strong>. Apostoł Paweł
+          wyjaśnia w Liście do Rzymian 4:5:</p>
+          
+          <p><em>"Temu zaś, który nie spełnia uczynków, ale wierzy w tego, który usprawiedliwia
+          bezbożnego, wiarę jego poczytuje mu się za sprawiedliwość."</em></p>
+          
+          <p>Wiara jest <strong>pasywnym przyjęciem</strong> daru Bożego, nie aktywnym
+          działaniem zasługującym na nagrodę. To jak wyciągnięcie ręki, aby przyjąć prezent –
+          sam gest przyjęcia nie czyni nas godnymi prezentu.</p>
+          
+          <p>Wiara jest "naczyniem", przez które przyjmujemy darmową ofertę Boga.
+          Nie dodaje ona nic do wartości zbawienia – cała wartość pochodzi z ofiary Chrystusa.</p>
+        `,
+      },
+      {
+        title: 'Cena została zapłacona przez Chrystusa',
+        content: `
+          <p>Zbawienie jest darmowe dla nas, ale <strong>nie było darmowe dla Boga</strong>.
+          Jezus Chrystus zapłacił najwyższą cenę – oddał swoje życie na krzyżu jako
+          <strong>doskonałą ofiarę za nasze grzechy</strong>.</p>
+          
+          <p>W Liście do Rzymian 6:23 czytamy: <em>"Albowiem zapłatą za grzech jest śmierć,
+          lecz darem łaski Bożej jest żywot wieczny w Chrystusie Jezusie, Panu naszym."</em></p>
+          
+          <p>Krew Jezusa była <strong>jednorazową, kompletną płatnością</strong> za dług
+          grzechu, którego ludzie byli całkowicie niezdolni spłacić sami. Gdy Jezus na krzyżu
+          powiedział "Wykonało się" (Jan 19:30), oznaczało to, że dzieło zbawienia zostało
+          <strong>w pełni ukończone</strong>.</p>
+          
+          <p>Nie możemy nic dodać do tego, co Chrystus już uczynił. Próba dodania naszych
+          uczynków do Jego ofiary byłaby obrazą dla doskonałości Jego dzieła.</p>
+        `,
+      },
+      {
+        title: 'Łaska wyklucza ludzkie zasługi',
+        content: `
+          <p>Biblia wyraźnie rozróżnia między systemem łaski a systemem uczynków.
+          Apostoł Paweł pisze w Liście do Rzymian 11:6:</p>
+          
+          <p><em>"A jeśli z łaski, to już nie z uczynków, gdyż inaczej łaska nie byłaby
+          już łaską."</em></p>
+          
+          <p>Te dwa systemy są <strong>wzajemnie wykluczające się</strong>. Jeśli zbawienie
+          zależy choćby w najmniejszym stopniu od naszych uczynków, to nie jest już darem
+          łaski. Jeśli jest darem łaski, to nie może zależeć od uczynków.</p>
+          
+          <p>Bóg działa w systemie łaski, który <strong>udziela błogosławieństw zanim
+          pozwoli człowiekowi cokolwiek dla Niego zrobić</strong>. To całkowicie odwraca
+          ludzki system zasług i nagród.</p>
+        `,
+      },
+      {
+        title: 'Dobre uczynki są rezultatem, nie warunkiem zbawienia',
+        content: `
+          <p>Ważne jest zrozumienie różnicy między <strong>usprawiedliwieniem</strong>
+          (otrzymaniem zbawienia) a <strong>uświęceniem</strong> (wzrostem duchowym).
+          Usprawiedliwienie następuje przez samą wiarę, natomiast uświęcenie to proces
+          moralnego wzrostu, który następuje po zbawieniu.</p>
+          
+          <p>Apostoł Paweł kontynuuje w Efezjan 2:10: <em>"Jesteśmy bowiem dziełem jego,
+          stworzeni w Chrystusie Jezusie do dobrych uczynków, które Bóg przedtem przygotował,
+          abyśmy w nich chodzili."</em></p>
+          
+          <p>Dobre uczynki są <strong>owocem zbawienia, nie korzeniem</strong>. Robimy
+          dobre uczynki nie po to, aby być zbawionymi, ale dlatego, że już jesteśmy zbawieni.
+          Są one naturalną odpowiedzią wdzięczności za otrzymany dar, nie warunkiem jego
+          otrzymania.</p>
+          
+          <p>Wysiłek jest potrzebny do uczniowstwa i zdobywania przyszłych nagród,
+          ale <strong>nigdy nie jest warunkiem otrzymania życia wiecznego</strong>.</p>
+        `,
+      },
+    ],
+    verses: [
+      {
+        reference: 'Efezjan 2:8-9',
+        text: 'Albowiem łaską zbawieni jesteście przez wiarę, i to nie z was: Boży to dar; nie z uczynków, aby się kto nie chlubił.',
+        translation: 'BW',
+      },
+      {
+        reference: 'Rzymian 6:23',
+        text: 'Albowiem zapłatą za grzech jest śmierć, lecz darem łaski Bożej jest żywot wieczny w Chrystusie Jezusie, Panu naszym.',
+        translation: 'BW',
+      },
+      {
+        reference: 'Rzymian 3:24',
+        text: 'I są usprawiedliwieni darmo, z łaski jego, przez odkupienie w Chrystusie Jezusie.',
+        translation: 'BW',
+      },
+      {
+        reference: 'Rzymian 4:5',
+        text: 'Temu zaś, który nie spełnia uczynków, ale wierzy w tego, który usprawiedliwia bezbożnego, wiarę jego poczytuje mu się za sprawiedliwość.',
+        translation: 'BW',
+      },
+      {
+        reference: 'Tytusa 3:5',
+        text: 'Zbawił nas nie dla uczynków sprawiedliwości, które my czyniliśmy, lecz według miłosierdzia swego przez kąpiel odrodzenia i odnowienie Ducha Świętego.',
+        translation: 'BW',
+      },
+      {
+        reference: 'Jan 4:10',
+        text: 'Odpowiedział Jezus i rzekł jej: Gdybyś znała dar Boży i wiedziała, kto to jest, który ci mówi: Daj mi pić, ty byś go prosiła, a dałby ci wody żywej.',
+        translation: 'BW',
+      },
+      {
+        reference: 'Objawienie 22:17',
+        text: 'A Duch i oblubienica mówią: Przyjdź! A kto słyszy, niech powie: Przyjdź! A kto pragnie, niech przyjdzie, a kto chce, niech bierze wodę żywota darmo.',
+        translation: 'BW',
+      },
+    ],
+    relatedQuestions: [
+      'czy-mozna-utracic-zycie-wieczne',
+      'jak-rozpoznac-czy-trafilem-na-prawdziwe-nauczanie-odnosnie-zbawienia',
+    ],
+  },
+
   // Question 3: Czy można utracić życie wieczne?
   3: {
     slug: 'czy-mozna-utracic-zycie-wieczne',
@@ -376,6 +519,183 @@ export const questionContent: Record<number, QuestionContent> = {
     relatedQuestions: [
       'jak-rozpoznac-czy-trafilem-na-prawdziwe-nauczanie-odnosnie-zbawienia',
       'czy-mozna-utracic-zycie-wieczne',
+    ],
+  },
+
+  // Question 6: Czy Jezus rzeczywiście istniał?
+  6: {
+    slug: 'czy-jezus-rzeczywiscie-istnial',
+    title: 'Czy Jezus rzeczywiście istniał...?',
+    shortAnswer: 'Tak, historyczne istnienie Jezusa z Nazaretu jest faktem potwierdzonym przez liczne źródła – zarówno chrześcijańskie, jak i niechrześcijańskie.',
+    sections: [
+      {
+        title: 'Konsensus historyków',
+        content: `
+          <p>Historyczne istnienie Jezusa z Nazaretu jest <strong>powszechnie akceptowanym
+          faktem</strong> wśród współczesnych historyków. Jeden z uczonych stwierdził, że
+          historyczność Jezusa jest "tak samo aksjomatyczna dla bezstronnego historyka,
+          jak historyczność Juliusza Cezara".</p>
+          
+          <p>Poglądy zaprzeczające istnieniu Jezusa są marginalizowane w środowisku
+          akademickim i często charakteryzowane jako wymagające większej "łatwowierności"
+          niż tradycyjne stanowisko. Zdecydowana większość badaczy – zarówno wierzących,
+          jak i niewierzących – zgadza się, że Jezus był <strong>rzeczywistą postacią
+          historyczną</strong>.</p>
+          
+          <p>Nie chodzi tu o wiarę religijną, ale o <strong>rzetelną analizę historyczną</strong>
+          dostępnych źródeł i dowodów.</p>
+        `,
+      },
+      {
+        title: 'Źródła niechrześcijańskie',
+        content: `
+          <p>Istnienie Jezusa potwierdzają <strong>niezależne źródła pozabiblijne</strong>,
+          w tym autorzy żydowscy i rzymscy, którzy nie mieli powodu, by promować
+          chrześcijaństwo:</p>
+          
+          <ul>
+            <li><strong>Józef Flawiusz</strong> (37-100 n.e.) – żydowski historyk,
+            w swoim dziele "Dawne dzieje Izraela" wspomina o Jezusie jako "mądrym człowieku"
+            i "czyńcy zdumiewających czynów", który został skazany na krzyż przez Piłata.
+            Wspomina także o Jakubie jako "bracie Jezusa, zwanego Chrystusem".</li>
+            
+            <li><strong>Tacyt</strong> (56-120 n.e.) – rzymski historyk, pisząc około
+            70 lat po śmierci Jezusa, odnotowuje prześladowania chrześcijan przez Nerona
+            i stwierdza, że ich nazwa pochodzi od "Chrystusa", który "poniósł najwyższą
+            karę za panowania Tyberiusza z rąk jednego z naszych prokuratorów, Poncjusza
+            Piłata".</li>
+            
+            <li><strong>Pliniusz Młodszy</strong> (61-113 n.e.) – rzymski urzędnik,
+            w listach do cesarza Trajana opisuje praktyki wczesnych chrześcijan.</li>
+            
+            <li><strong>Swetoniusz</strong> (69-140 n.e.) – rzymski historyk, wspomina
+            o "Chrestusie" i zamieszaniach wśród Żydów.</li>
+          </ul>
+          
+          <p>Co istotne, <strong>starożytni przeciwnicy chrześcijaństwa</strong> – tacy
+          jak Celsus, Porfiriusz czy rabini talmudyczni – nigdy nie zaprzeczali, że Jezus
+          istniał lub że czynił "cuda" (choć przypisywali je czarom). Ich ataki były
+          skierowane przeciwko Jego boskości i zmartwychwstaniu, nie przeciwko Jego
+          istnieniu.</p>
+        `,
+      },
+      {
+        title: 'Dokumentacja Nowego Testamentu',
+        content: `
+          <p>Chociaż Nowy Testament jest tekstem religijnym, historycy traktują jego
+          różne księgi (Ewangelie, Dzieje Apostolskie, listy Pawła) jako <strong>odrębne
+          dokumenty pierwotne</strong> z pierwszego wieku.</p>
+          
+          <p>Te źródła zostały napisane <strong>w ciągu pierwszego pokolenia</strong>
+          po wydarzeniach, gdy <strong>naoczni świadkowie</strong> wciąż żyli i mogli
+          służyć jako kontrola przed legendarnymi upiększeniami. Apostoł Paweł w
+          1 Liście do Koryntian 15:6 wspomina, że zmartwychwstały Jezus ukazał się
+          "więcej niż pięciuset braciom naraz, z których większość dotychczas żyje" –
+          co było zaproszeniem do weryfikacji jego twierdzeń.</p>
+          
+          <p>Profesjonalni historycy grecko-rzymscy zauważają, że zazwyczaj potrzeba
+          <strong>więcej niż dwóch pokoleń</strong>, aby legendy wymazały "twardy rdzeń
+          faktów historycznych". Ewangelie zostały napisane zbyt wcześnie, aby
+          historyczny Jezus mógł zostać zastąpiony przez czysto mityczną postać.</p>
+        `,
+      },
+      {
+        title: 'Kryteria autentyczności historycznej',
+        content: `
+          <p>Historycy używają specyficznych narzędzi do identyfikacji faktów
+          historycznych w tekstach:</p>
+          
+          <ul>
+            <li><strong>Kryterium zakłopotania</strong> – Historie, które byłyby
+            niewygodne dla wczesnego Kościoła, są prawdopodobnie prawdziwe. Na przykład,
+            fakt, że <strong>kobiety</strong> – których świadectwo było prawnie bezwartościowe
+            w tamtej kulturze – były głównymi świadkami pustego grobu, jest silnym znakiem
+            historyczności.</li>
+            
+            <li><strong>Kryterium odmienności</strong> – Wypowiedzi lub wydarzenia,
+            które nie pasują do wcześniejszego kontekstu żydowskiego ani późniejszej
+            teologii chrześcijańskiej, są często autentyczne. Napis "Król Żydów" przybity
+            do krzyża jest "historycznym fundamentem", ponieważ nie był to tytuł używany
+            przez wczesny Kościół dla Jezusa.</li>
+            
+            <li><strong>Wielokrotne niezależne poświadczenie</strong> – Gdy wydarzenie
+            jest relacjonowane przez dwa lub więcej niezależnych źródeł (takich jak
+            Marek i Paweł), jego wiarygodność wzrasta.</li>
+          </ul>
+          
+          <p>Stosując te kryteria, większość współczesnych uczonych zgadza się na
+          <strong>"minimalne fakty"</strong>: Jezus był żydowskim nauczycielem, który
+          został ukrzyżowany pod Poncjuszem Piłatem, został pochowany, a wkrótce potem
+          Jego uczniowie mieli doświadczenia, które uważali za zjawienia zmartwychwstałego
+          Jezusa, co doprowadziło do szybkiego i niewytłumaczalnego powstania Kościoła
+          chrześcijańskiego w Jerozolimie.</p>
+        `,
+      },
+      {
+        title: 'Świadectwo naocznych świadków',
+        content: `
+          <p>Autorzy Nowego Testamentu wielokrotnie podkreślają, że są <strong>naocznymi
+          świadkami</strong> lub opierają się na relacjach naocznych świadków:</p>
+          
+          <p>Apostoł Jan pisze: <em>"Co było od początku, co słyszeliśmy, co oczami
+          naszymi widzieliśmy, na co patrzyliśmy i czego ręce nasze dotykały, o Słowie
+          żywota"</em> (1 Jana 1:1).</p>
+          
+          <p>Apostoł Piotr stwierdza: <em>"Gdyż nie za wymyślonymi baśniami postępując,
+          oznajmiliśmy wam moc i przyjście Pana naszego Jezusa Chrystusa, lecz jako
+          naoczni świadkowie jego wielkości"</em> (2 Piotra 1:16).</p>
+          
+          <p>Łukasz na początku swojej Ewangelii wyjaśnia swoją <strong>metodologię
+          badawczą</strong>, powołując się na relacje naocznych świadków: <em>"Skoro
+          już wielu podjęło się sporządzenia opisu wydarzeń, które wśród nas się dokonały,
+          jak nam to przekazali naoczni od samego początku świadkowie"</em> (Łukasza 1:1-2).</p>
+          
+          <p>Te świadectwa nie są anonimowymi legendami, ale <strong>konkretnymi
+          twierdzeniami</strong> ludzi, którzy byli gotowi umrzeć za to, co widzieli
+          i słyszeli.</p>
+        `,
+      },
+    ],
+    verses: [
+      {
+        reference: '1 Jana 1:1-3',
+        text: 'Co było od początku, co słyszeliśmy, co oczami naszymi widzieliśmy, na co patrzyliśmy i czego ręce nasze dotykały, o Słowie żywota - a żywot objawiony został, i widzieliśmy, i świadczymy, i zwiastujemy wam ów żywot wieczny, który był u Ojca, a nam objawiony został.',
+        translation: 'BW',
+      },
+      {
+        reference: '2 Piotra 1:16',
+        text: 'Gdyż nie za wymyślonymi baśniami postępując, oznajmiliśmy wam moc i przyjście Pana naszego Jezusa Chrystusa, lecz jako naoczni świadkowie jego wielkości.',
+        translation: 'BW',
+      },
+      {
+        reference: 'Łukasza 1:1-4',
+        text: 'Skoro już wielu podjęło się sporządzenia opisu wydarzeń, które wśród nas się dokonały, jak nam to przekazali naoczni od samego początku świadkowie i słudzy Słowa, postanowiłem i ja, który wszystko od początku przebadałem, dokładnie kolejno ci to opisać, dostojny Teofilu, abyś upewnił się w prawdziwości nauki, jaką odebrałeś.',
+        translation: 'BW',
+      },
+      {
+        reference: '1 Koryntian 15:3-6',
+        text: 'Przekazałem wam bowiem na początku to, co i ja przejąłem, że Chrystus umarł za grzechy nasze według Pism i że został pogrzebany, i że dnia trzeciego został z martwych wzbudzony według Pism. I że ukazał się Kefasowi, potem Dwunastu. Potem ukazał się więcej niż pięciuset braciom naraz, z których większość dotychczas żyje, niektórzy zaś zasnęli.',
+        translation: 'BW',
+      },
+      {
+        reference: 'Jan 21:24',
+        text: 'Ten właśnie uczeń świadczy o tych rzeczach i to napisał; a wiemy, że świadectwo jego jest prawdziwe.',
+        translation: 'BW',
+      },
+      {
+        reference: 'Dzieje Apostolskie 1:3',
+        text: 'Którym też po swojej męce dał wiele dowodów, że żyje, ukazując się im przez czterdzieści dni i mówiąc o tym, co dotyczy Królestwa Bożego.',
+        translation: 'BW',
+      },
+      {
+        reference: 'Jan 20:30-31',
+        text: 'Wiele innych znaków uczynił Jezus wobec uczniów swoich, które nie są zapisane w tej księdze. Te zaś są zapisane, abyście wierzyli, że Jezus jest Chrystusem, Synem Bożym, i abyście wierząc, mieli żywot w imieniu jego.',
+        translation: 'BW',
+      },
+    ],
+    relatedQuestions: [
+      '5-czy-nowy-testament-jest-wiarygodnym-zrodlem-historycznym-a-nie-jakas-legenda',
+      'jak-rozpoznac-czy-trafilem-na-prawdziwe-nauczanie-odnosnie-zbawienia',
     ],
   },
 

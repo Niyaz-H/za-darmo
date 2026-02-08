@@ -101,9 +101,9 @@ export const allQuestions: Question[] = [
     id: 2,
     slug: 'czy-zbawienie-naprawde-jest-calkowicie-za-darmo',
     title: 'Czy zbawienie naprawdę jest całkowicie za darmo?',
-    shortAnswer: 'Tak, zbawienie jest darem od Boga.',
+    shortAnswer: 'Tak, zbawienie jest całkowicie darmowym darem od Boga.',
     datePublished: '2018-09-15',
-    isAvailable: false, // Not archived
+    isAvailable: true,
   },
   {
     id: 3,
@@ -135,7 +135,7 @@ export const allQuestions: Question[] = [
     title: 'Czy Jezus rzeczywiście istniał...?',
     shortAnswer: 'Tak, istnieją liczne dowody historyczne.',
     datePublished: '2018-11-01',
-    isAvailable: false, // Not completed
+    isAvailable: true,
   },
   {
     id: 7,

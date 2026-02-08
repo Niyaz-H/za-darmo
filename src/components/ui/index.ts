@@ -3,3 +3,4 @@ export { SocialIcons } from './SocialIcons';
 export { Navigation, MobileMenu, MobileMenuButton } from './Navigation';
 export { Button } from './Button';
 export { ExpandableSection } from './ExpandableSection';
+export { SearchModal } from './SearchModal';
